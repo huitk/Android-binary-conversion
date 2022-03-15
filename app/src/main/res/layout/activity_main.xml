@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="Base Convert" android:textColor="#000000"
+                android:textSize="15sp" android:textStyle="bold"/>
+
+
+
+            <EditText
+                android:id="@+id/units"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint= "Enter a number"
+                android:inputType="text"
+                android:maxLines="1" />
+                <!--android:digits="01" -->
+
+f
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/groupradio"
+                android:orientation="vertical" >
+                <RadioButton
+                    android:id="@+id/radio_binary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="binary">
+
+
+               </RadioButton>
+                <RadioButton
+                    android:id="@+id/radio_octal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Octal">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_decimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Decimal">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_hex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Hex">
+
+                </RadioButton>
+
+            </RadioGroup>
+            <Button android:id="@+id/convert"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CONVERT"/>
+
+            <Button android:id="@+id/clear_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLEAR"/>
+
+            <TextView
+                android:id="@+id/output_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
