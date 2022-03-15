@@ -1,5 +1,6 @@
 # Android-binary-conversion
 Step 1:
+
 • Create a new Android project.
 • The first step is to modify activity_main.xml to create a user
   inteface that has the same widgets as the app below. You can do the modification directly in xml or using a graphical tool.
@@ -7,7 +8,9 @@ Step 1:
 • Use radio buttons for the different formats. You will need to put your RadioButtons into a RadioGroup – this will make sure only 
   one button is “pressed” at a time.
 • Run your app. It won’t be able to do anything but should look like you want your app to look.
+
 Step 2:
+
 • Now you are going to do some simple wiring. In your XML
   layout, add identifiers to each of the widgets you are going to use. For example, android:id=”@+id/input_value” could be used for the 
   first EditText widget.
@@ -20,7 +23,9 @@ Step 2:
   Integer.parseInt(numberstring,base)to get the decimal value of the input based on the current ‘base’ specified by the radio buttons. Note that 
   until you do step 3 below, the app will die if you try to do this conversion on an illegal input.
 • Test your code by running the app and playing with it a little.
+
 Step 3:
+
 • Finally, add some error checking and input controls:
 • Error checking: You may have noticed that parseInt raises an exception if the input string is illegal for the given base. Add exception handling to prevent the app dying and use Toast to provide an error message, like the example to the right. An example of Toast is in the slides.
 • Control the legal input: For binary, octal and decimal, we only need integer input. You control the keyboard in the java code for the radio buttons by using:
